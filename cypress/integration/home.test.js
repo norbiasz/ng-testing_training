@@ -22,7 +22,7 @@ describe('Home Page', () => {
 
   })
   it('should display the advanced courses', () => {
-    cy.get('.mat-tab-label').should("have.length", 2)
+    cy.get('.mat-tab-label').should("have.length", 4)
     cy.get('.mat-tab-label').last().click()
     cy.get('.mat-tab-body-active .mat-card-title').its('length').should('be.greaterThan', 1)
     cy.get('.mat-tab-body-active .mat-card-title').first().should('contain','Angular Security Course')
